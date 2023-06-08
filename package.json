@@ -6,12 +6,12 @@
     "app"
   ],
   "scripts": {
+    "app:build": "yarn ultra -r --filter \"+@visitor-board/app\" build",
     "build": "ultra -r build",
     "build:dts": "ultra -r --build build:dts",
     "clean": "ultra -r clean",
     "dev": "ultra -r dev",
     "format": "eslint --fix --ext .js,.json,.ts,.tsx --ignore-path .gitignore .",
-    "server:build": "yarn ultra -r --filter \"+@visitor-board/app\" build",
     "test": "yarn build && ultra -r test",
     "typecheck": "tsc --noEmit",
     "version": "yarn install && git stage yarn.lock"
