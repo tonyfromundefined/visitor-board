@@ -2,8 +2,10 @@ import FastifyCookie from "@fastify/cookie";
 import FastifyCors from "@fastify/cors";
 import FastifyMiddie from "@fastify/middie";
 import Fastify from "fastify";
+import Mercurius from "mercurius";
 
 import { env } from "./env";
+import { makeSchema } from "./graphql";
 import { setupClient } from "./setupClient";
 
 export async function makeApp() {
@@ -19,6 +21,13 @@ export async function makeApp() {
   await app.register(FastifyCookie, {
     secret: env.cookieSecret,
     hook: "onRequest",
+  });
+
+  const schema = await makeSchema();
+
+  app.register(Mercurius, {
+    schema,
+    graphiql: true,
   });
 
   /**

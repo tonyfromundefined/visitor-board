@@ -18,3 +18,5 @@ node_modules
 
 # Build Artifacts
 dist
+
+.DS_Store
