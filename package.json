@@ -1,0 +1,41 @@
+{
+  "name": "@fastify-app-tony/monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "app"
+  ],
+  "scripts": {
+    "build": "ultra -r build",
+    "build:dts": "ultra -r --build build:dts",
+    "clean": "ultra -r clean",
+    "dev": "ultra -r dev",
+    "format": "eslint --fix --ext .js,.json,.ts,.tsx --ignore-path .gitignore .",
+    "server:build": "yarn ultra -r --filter \"+@fastify-app-tony/app\" build",
+    "test": "yarn build && ultra -r test",
+    "typecheck": "tsc --noEmit",
+    "version": "yarn install && git stage yarn.lock"
+  },
+  "resolutions": {
+    "esbuild": "^0.17",
+    "vite": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.15",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "@typescript-eslint/parser": "^5.59.7",
+    "concurrently": "^8.0.1",
+    "eslint": "^8.41.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-json-format": "^2.0.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4",
+    "ultra-runner": "^3.10.5",
+    "vite": "^4.3.8"
+  },
+  "packageManager": "yarn@3.5.0"
+}

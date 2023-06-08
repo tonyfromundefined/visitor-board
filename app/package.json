@@ -1,0 +1,53 @@
+{
+  "name": "@fastify-app-tony/app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "yarn build:client && yarn build:app",
+    "build:app": "node ./esbuild.config.mjs",
+    "build:client": "vite build --outDir ../../dist/client",
+    "clean": "yarn rimraf ./dist && yarn rimraf ./node_modules",
+    "dev": "nodemon",
+    "start": "NODE_ENV=production node ./dist/index.mjs"
+  },
+  "nodemonConfig": {
+    "exec": "yarn build:app && node ./dist/index.mjs",
+    "ext": "ts,tsx",
+    "ignore": [
+      "**/dist/**",
+      "**/node_modules/**",
+      "src/client/**"
+    ],
+    "watch": "src"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^8.3.0",
+    "@fastify/cors": "^8.3.0",
+    "@fastify/middie": "^8.3.0",
+    "@fastify/static": "^6.10.2",
+    "@vanilla-extract/css": "^1.11.0",
+    "@vanilla-extract/recipes": "^0.4.0",
+    "dotenv-safe-ko": "^100.0.4",
+    "fastify": "^4.17.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.4",
+    "@vanilla-extract/vite-plugin": "^3.8.2",
+    "@vitejs/plugin-react": "^4.0.0",
+    "esbuild": "^0.17.19",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.8"
+  },
+  "ultra": {
+    "concurrent": [
+      "clean",
+      "build"
+    ]
+  }
+}
