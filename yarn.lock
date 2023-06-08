@@ -1680,55 +1680,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify-app-tony/app@workspace:app":
-  version: 0.0.0-use.local
-  resolution: "@fastify-app-tony/app@workspace:app"
-  dependencies:
-    "@fastify/cookie": ^8.3.0
-    "@fastify/cors": ^8.3.0
-    "@fastify/middie": ^8.3.0
-    "@fastify/static": ^6.10.2
-    "@types/react": ^18.2.7
-    "@types/react-dom": ^18.2.4
-    "@vanilla-extract/css": ^1.11.0
-    "@vanilla-extract/recipes": ^0.4.0
-    "@vanilla-extract/vite-plugin": ^3.8.2
-    "@vitejs/plugin-react": ^4.0.0
-    dotenv-safe-ko: ^100.0.4
-    esbuild: ^0.17.19
-    fastify: ^4.17.0
-    nodemon: ^2.0.22
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-router-dom: ^6.11.2
-    rimraf: ^5.0.1
-    typescript: ^5.0.4
-    vite: ^4.3.8
-  languageName: unknown
-  linkType: soft
-
-"@fastify-app-tony/monorepo@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@fastify-app-tony/monorepo@workspace:."
-  dependencies:
-    "@types/node": ^18.16.15
-    "@typescript-eslint/eslint-plugin": ^5.59.7
-    "@typescript-eslint/parser": ^5.59.7
-    concurrently: ^8.0.1
-    eslint: ^8.41.0
-    eslint-config-airbnb-typescript: ^17.0.0
-    eslint-config-prettier: ^8.8.0
-    eslint-config-react-app: ^7.0.1
-    eslint-plugin-json-format: ^2.0.1
-    eslint-plugin-prettier: ^4.2.1
-    eslint-plugin-simple-import-sort: ^10.0.0
-    prettier: ^2.8.8
-    typescript: ^5.0.4
-    ultra-runner: ^3.10.5
-    vite: ^4.3.8
-  languageName: unknown
-  linkType: soft
-
 "@fastify/accept-negotiator@npm:^1.0.0":
   version: 1.1.0
   resolution: "@fastify/accept-negotiator@npm:1.1.0"
@@ -2362,6 +2313,55 @@ __metadata:
   checksum: 9f6e3534aff492abf0b29f37f9f9f969611d34d135f7b18171a13f73ef7b86504da7fd037ecc5b19e56845e06e2bb91cb3b42ab5beeb7e7dfa04c2349aebe1d5
   languageName: node
   linkType: hard
+
+"@visitor-board/app@workspace:app":
+  version: 0.0.0-use.local
+  resolution: "@visitor-board/app@workspace:app"
+  dependencies:
+    "@fastify/cookie": ^8.3.0
+    "@fastify/cors": ^8.3.0
+    "@fastify/middie": ^8.3.0
+    "@fastify/static": ^6.10.2
+    "@types/react": ^18.2.7
+    "@types/react-dom": ^18.2.4
+    "@vanilla-extract/css": ^1.11.0
+    "@vanilla-extract/recipes": ^0.4.0
+    "@vanilla-extract/vite-plugin": ^3.8.2
+    "@vitejs/plugin-react": ^4.0.0
+    dotenv-safe-ko: ^100.0.4
+    esbuild: ^0.17.19
+    fastify: ^4.17.0
+    nodemon: ^2.0.22
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-router-dom: ^6.11.2
+    rimraf: ^5.0.1
+    typescript: ^5.0.4
+    vite: ^4.3.8
+  languageName: unknown
+  linkType: soft
+
+"@visitor-board/monorepo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@visitor-board/monorepo@workspace:."
+  dependencies:
+    "@types/node": ^18.16.15
+    "@typescript-eslint/eslint-plugin": ^5.59.7
+    "@typescript-eslint/parser": ^5.59.7
+    concurrently: ^8.0.1
+    eslint: ^8.41.0
+    eslint-config-airbnb-typescript: ^17.0.0
+    eslint-config-prettier: ^8.8.0
+    eslint-config-react-app: ^7.0.1
+    eslint-plugin-json-format: ^2.0.1
+    eslint-plugin-prettier: ^4.2.1
+    eslint-plugin-simple-import-sort: ^10.0.0
+    prettier: ^2.8.8
+    typescript: ^5.0.4
+    ultra-runner: ^3.10.5
+    vite: ^4.3.8
+  languageName: unknown
+  linkType: soft
 
 "@vitejs/plugin-react@npm:^4.0.0":
   version: 4.0.0

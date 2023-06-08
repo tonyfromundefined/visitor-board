@@ -1,5 +1,5 @@
 {
-  "name": "@fastify-app-tony/monorepo",
+  "name": "@visitor-board/monorepo",
   "private": true,
   "workspaces": [
     "packages/*",
@@ -11,7 +11,7 @@
     "clean": "ultra -r clean",
     "dev": "ultra -r dev",
     "format": "eslint --fix --ext .js,.json,.ts,.tsx --ignore-path .gitignore .",
-    "server:build": "yarn ultra -r --filter \"+@fastify-app-tony/app\" build",
+    "server:build": "yarn ultra -r --filter \"+@visitor-board/app\" build",
     "test": "yarn build && ultra -r test",
     "typecheck": "tsc --noEmit",
     "version": "yarn install && git stage yarn.lock"

@@ -1,5 +1,5 @@
 {
-  "name": "@fastify-app-tony/app",
+  "name": "@visitor-board/app",
   "private": true,
   "type": "module",
   "scripts": {
