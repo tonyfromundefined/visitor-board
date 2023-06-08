@@ -1,5 +1,6 @@
 export type Env = {
   cookieSecret: string;
+  dbEndpoint: string;
 };
 
 export function defineEnv(e: Env) {
@@ -8,4 +9,5 @@ export function defineEnv(e: Env) {
 
 export const env = defineEnv({
   cookieSecret: process.env.COOKIE_SECRET as string,
+  dbEndpoint: process.env.DB_ENDPOINT as string,
 });

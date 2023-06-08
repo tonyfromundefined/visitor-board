@@ -1,3 +1,58 @@
+type Comment implements Node {
+  """작성자 이름"""
+  authorName: String!
+
+  """콘텐츠 (Multiline Text)"""
+  content: String!
+
+  """(Auto Generated) ISO8601 DateTime Spec"""
+  createdAt: String!
+
+  """(Auto Generated) ID"""
+  id: ID!
+}
+
+input CreateCommentInput {
+  authorName: String!
+  content: String!
+  password: String!
+}
+
+type CreateCommentOutput {
+  comment: Comment!
+}
+
+input DeleteCommentInput {
+  id: ID!
+  passwordConfirm: String!
+}
+
+type DeleteCommentOutput {
+  comment: Comment!
+}
+
+type Mutation {
+  createComment(input: CreateCommentInput!): CreateCommentOutput!
+  deleteComment(input: DeleteCommentInput!): DeleteCommentOutput!
+  updateComment(input: UpdateCommentInput!): UpdateCommentOutput!
+}
+
+interface Node {
+  id: ID!
+}
+
 type Query {
+  """작성된 모든 코멘트를 내려받습니다"""
+  allComments: [Comment!]!
   ping: Boolean!
+}
+
+input UpdateCommentInput {
+  content: String!
+  id: ID!
+  passwordConfirm: String!
+}
+
+type UpdateCommentOutput {
+  comment: Comment!
 }

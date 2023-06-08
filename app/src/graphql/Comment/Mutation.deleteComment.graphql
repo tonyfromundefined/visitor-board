@@ -1,0 +1,12 @@
+type Mutation {
+  deleteComment(input: DeleteCommentInput!): DeleteCommentOutput!
+}
+
+input DeleteCommentInput {
+  id: ID!
+  passwordConfirm: String!
+}
+
+type DeleteCommentOutput {
+  comment: Comment!
+}

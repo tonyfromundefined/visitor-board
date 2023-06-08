@@ -3,9 +3,12 @@ import FastifyCors from "@fastify/cors";
 import FastifyMiddie from "@fastify/middie";
 import Fastify from "fastify";
 import Mercurius from "mercurius";
+import { MongoClient } from "mongodb";
 
 import { env } from "./env";
 import { makeSchema } from "./graphql";
+import { defineContext } from "./graphql/defineContext";
+import { makeCommentRepository } from "./repositories";
 import { setupClient } from "./setupClient";
 
 export async function makeApp() {
@@ -23,11 +26,23 @@ export async function makeApp() {
     hook: "onRequest",
   });
 
+  const mongoClient = new MongoClient(env.dbEndpoint);
+  const db = mongoClient.db("visitor-board");
+
+  const commentRepository = makeCommentRepository({ db });
+
   const schema = await makeSchema();
 
   app.register(Mercurius, {
     schema,
     graphiql: true,
+    context() {
+      return defineContext({
+        repositories: {
+          comment: commentRepository,
+        },
+      });
+    },
   });
 
   /**

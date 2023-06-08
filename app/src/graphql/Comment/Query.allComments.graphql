@@ -1,0 +1,6 @@
+type Query {
+  """
+  작성된 모든 코멘트를 내려받습니다
+  """
+  allComments: [Comment!]!
+}

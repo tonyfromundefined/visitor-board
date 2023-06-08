@@ -1,0 +1,13 @@
+type Mutation {
+  updateComment(input: UpdateCommentInput!): UpdateCommentOutput!
+}
+
+input UpdateCommentInput {
+  id: ID!
+  passwordConfirm: String!
+  content: String!
+}
+
+type UpdateCommentOutput {
+  comment: Comment!
+}

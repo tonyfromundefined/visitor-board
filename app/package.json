@@ -7,6 +7,7 @@
     "build:app": "node ./esbuild.config.mjs",
     "build:client": "vite build --outDir ../../dist/client",
     "clean": "yarn rimraf ./dist && yarn rimraf ./node_modules",
+    "codegen": "graphql-codegen",
     "dev": "nodemon",
     "start": "NODE_ENV=production node ./dist/index.mjs"
   },
@@ -32,9 +33,11 @@
     "@vanilla-extract/css": "^1.11.0",
     "@vanilla-extract/recipes": "^0.4.0",
     "dotenv-safe-ko": "^100.0.4",
+    "eventive": "^0.3.0",
     "fastify": "^4.17.0",
     "graphql": "^16.6.0",
     "mercurius": "^13.0.0",
+    "mongodb": "^5.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2"

@@ -1,0 +1,13 @@
+type Mutation {
+  createComment(input: CreateCommentInput!): CreateCommentOutput!
+}
+
+input CreateCommentInput {
+  authorName: String!
+  content: String!
+  password: String!
+}
+
+type CreateCommentOutput {
+  comment: Comment!
+}

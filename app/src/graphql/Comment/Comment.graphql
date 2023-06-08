@@ -1,0 +1,21 @@
+type Comment implements Node {
+  """
+  (Auto Generated) ID
+  """
+  id: ID!
+
+  """
+  (Auto Generated) ISO8601 DateTime Spec
+  """
+  createdAt: String!
+
+  """
+  작성자 이름
+  """
+  authorName: String!
+
+  """
+  콘텐츠 (Multiline Text)
+  """
+  content: String!
+}

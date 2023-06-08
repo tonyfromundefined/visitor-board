@@ -11,6 +11,11 @@ const config: CodegenConfig = {
       plugins: ["typescript", "typescript-resolvers"],
       config: {
         useIndexSignature: true,
+        contextType: "../graphql/defineContext#Context",
+        mappers: {
+          Comment: "../core/Comment/CommentState#Comment",
+        },
+        mapperTypeSuffix: "Model",
       },
     },
   },
