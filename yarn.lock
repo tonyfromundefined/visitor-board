@@ -2909,6 +2909,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash-es@npm:^4.17.7":
+  version: 4.17.7
+  resolution: "@types/lodash-es@npm:4.17.7"
+  dependencies:
+    "@types/lodash": "*"
+  checksum: 4b1f39fd1d921311c37a846c0e0df9d1fa23e27448a6ad1efd7574e703abd2b2fa5e8f3b5037146000f167ba231d0d01e52747d902654151b4ceeff9f2a9b380
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:*":
+  version: 4.14.195
+  resolution: "@types/lodash@npm:4.14.195"
+  checksum: 39b75ca635b3fa943d17d3d3aabc750babe4c8212485a4df166fe0516e39288e14b0c60afc6e21913cc0e5a84734633c71e617e2bd14eaa1cf51b8d7799c432e
+  languageName: node
+  linkType: hard
+
 "@types/minimatch@npm:*":
   version: 5.1.2
   resolution: "@types/minimatch@npm:5.1.2"
@@ -3282,6 +3298,7 @@ __metadata:
     "@graphql-codegen/typescript": ^4.0.0
     "@graphql-codegen/typescript-resolvers": ^4.0.0
     "@graphql-tools/schema": ^10.0.0
+    "@types/lodash-es": ^4.17.7
     "@types/react": ^18.2.7
     "@types/react-dom": ^18.2.4
     "@vanilla-extract/css": ^1.11.0
@@ -3293,6 +3310,7 @@ __metadata:
     eventive: ^0.3.0
     fastify: ^4.17.0
     graphql: ^16.6.0
+    lodash-es: ^4.17.21
     mercurius: ^13.0.0
     mongodb: ^5.6.0
     nodemon: ^2.0.22

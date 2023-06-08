@@ -5058,6 +5058,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/lodash", [\
+        ["npm:4.14.195", {\
+          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.195-a2a8254638-39b75ca635.zip/node_modules/@types/lodash/",\
+          "packageDependencies": [\
+            ["@types/lodash", "npm:4.14.195"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/lodash-es", [\
+        ["npm:4.17.7", {\
+          "packageLocation": "./.yarn/cache/@types-lodash-es-npm-4.17.7-7322f70ff2-4b1f39fd1d.zip/node_modules/@types/lodash-es/",\
+          "packageDependencies": [\
+            ["@types/lodash-es", "npm:4.17.7"],\
+            ["@types/lodash", "npm:4.14.195"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/minimatch", [\
         ["npm:5.1.2", {\
           "packageLocation": "./.yarn/cache/@types-minimatch-npm-5.1.2-aab9c394d3-0391a28286.zip/node_modules/@types/minimatch/",\
@@ -5598,6 +5617,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@graphql-codegen/typescript", "virtual:ffd36af147df0d490bfa3283aaa2b3c614b4d92153d14c0223efc9f234704505ff7013b17b96e6f081679b85c1993ece85a86ec8d4d9066183a45220b17bc44a#npm:4.0.0"],\
             ["@graphql-codegen/typescript-resolvers", "virtual:ffd36af147df0d490bfa3283aaa2b3c614b4d92153d14c0223efc9f234704505ff7013b17b96e6f081679b85c1993ece85a86ec8d4d9066183a45220b17bc44a#npm:4.0.0"],\
             ["@graphql-tools/schema", "virtual:ffd36af147df0d490bfa3283aaa2b3c614b4d92153d14c0223efc9f234704505ff7013b17b96e6f081679b85c1993ece85a86ec8d4d9066183a45220b17bc44a#npm:10.0.0"],\
+            ["@types/lodash-es", "npm:4.17.7"],\
             ["@types/react", "npm:18.2.7"],\
             ["@types/react-dom", "npm:18.2.4"],\
             ["@vanilla-extract/css", "npm:1.11.0"],\
@@ -5609,6 +5629,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eventive", "npm:0.3.0"],\
             ["fastify", "npm:4.17.0"],\
             ["graphql", "npm:16.6.0"],\
+            ["lodash-es", "npm:4.17.21"],\
             ["mercurius", "virtual:ffd36af147df0d490bfa3283aaa2b3c614b4d92153d14c0223efc9f234704505ff7013b17b96e6f081679b85c1993ece85a86ec8d4d9066183a45220b17bc44a#npm:13.0.0"],\
             ["mongodb", "virtual:e6c3540fa4919c7381d59ab8cda3146b11c5596a5611a932b8dada611ec3e3e9f282459f5d56272abf67f400c292bfec7c4acab145a81f18aa115f826795f66e#npm:5.6.0"],\
             ["nodemon", "npm:2.0.22"],\

@@ -36,6 +36,7 @@
     "eventive": "^0.3.0",
     "fastify": "^4.17.0",
     "graphql": "^16.6.0",
+    "lodash-es": "^4.17.21",
     "mercurius": "^13.0.0",
     "mongodb": "^5.6.0",
     "react": "^18.2.0",
@@ -44,6 +45,7 @@
   },
   "devDependencies": {
     "@graphql-codegen/schema-ast": "^4.0.0",
+    "@types/lodash-es": "^4.17.7",
     "@types/react": "^18.2.7",
     "@types/react-dom": "^18.2.4",
     "@vanilla-extract/vite-plugin": "^3.8.2",
